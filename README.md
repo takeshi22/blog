@@ -1,2 +1,2 @@
 # blog
-Jamstack
+Jamstackでブログを作る
