@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "name": "food"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "paragraph": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
