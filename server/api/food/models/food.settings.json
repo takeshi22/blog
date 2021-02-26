@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "paragraph": {
-      "type": "richtext"
-    },
     "title": {
       "type": "string"
     },
@@ -27,6 +24,12 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "lead": {
+      "type": "string"
     }
   }
 }
