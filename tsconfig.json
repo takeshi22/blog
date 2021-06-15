@@ -19,7 +19,7 @@
     "target": "esnext"
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "pages/index.js", "components/items.js", "next.config.js"],
+  "include": ["**/*.ts", "**/*.tsx", "pages/index.js", "components/items.js", "next.config.js", "server/plugins/wysiwyg/admin/src/components/MediaLib/index.js", "server/plugins/wysiwyg/admin/src/components/QuillEditor/index.js", "server/plugins/wysiwyg/admin/src/components/Wysiwyg/index.js"],
   "baseUrl": "types",
   "typeRoots": ["types"],
 }

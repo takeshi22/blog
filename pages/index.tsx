@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import axios from "axios";
 import { format } from "date-fns";
 import Header from "../components/header";
@@ -25,14 +26,18 @@ const Home = ({ foods, error }) => {
       <Header />
 
       <Ul>
-        {foods.map(({ title, lead, published_at, thumbnail }, index) => (
+        {foods.map(({ id, title, lead, published_at, thumbnail }, index) => (
           <li key={index}>
-            <Item
-              title={title}
-              lead={lead}
-              date={format(new Date(published_at), "yyyy/MM/dd")}
-              url={thumbnail.formats.thumbnail.url}
-            />
+            <Link href={`/foods/views/${id}`}>
+              <a>
+                <Item
+                  title={title}
+                  lead={lead}
+                  date={format(new Date(published_at), "yyyy/MM/dd")}
+                  url={thumbnail.formats.thumbnail.url}
+                />
+              </a>
+            </Link>
           </li>
         ))}
       </Ul>

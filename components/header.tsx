@@ -3,12 +3,11 @@ import styled from "@emotion/styled"
 const baseColor = "#CF3721";
 const HeaderContent = styled.header`
   // background: ${baseColor};
-  text-align: center;
+  text-align: left;
 `;
 const PageTitle = styled.h1`
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-top: 4px solid ${baseColor};
+  padding: 12px 20px 12px;
+  // border-top: 4px solid ${baseColor};
   font-size: 28px;
   color: #fff;
   line-height: 1;
