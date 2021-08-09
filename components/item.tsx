@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { getStrapiPath } from "../lib/api";
 
 const Article = styled.article`
-  width: 980px;
+  width: 100%;
   margin: 0 auto;
   figure {
     text-align: center;
@@ -16,8 +16,10 @@ const Article = styled.article`
 const ArticleHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 4px;
   .article-title {
-    font-size: 18px;
+    font-size: 16px;
   }
   time {
     font-size: 11px;
@@ -26,10 +28,8 @@ const ArticleHeader = styled.div`
 `;
 
 const Lead = styled.p`
-  .lead {
-    font-size: 13px;
-    color: #767575;
-  }
+  font-size: 13px;
+  color: #767575;
 `;
 
 interface Props {
@@ -55,23 +55,8 @@ const Item = (props: Props) => {
         <time dateTime={date}>{date}</time>
       </ArticleHeader>
 
-      <Lead className="lead">{lead}</Lead>
-
-      {/* {renderContent(paragraph)} */}
+      <Lead>{lead}</Lead>
     </Article>
-  );
-};
-
-const renderContent = (content: string) => {
-  const newContent =
-    content &&
-    content.replace(/src="\/uploads/g, `src="${getStrapiPath("uploads")}`);
-
-  return (
-    <div
-      className="article-lead"
-      dangerouslySetInnerHTML={{ __html: newContent }}
-    />
   );
 };
 

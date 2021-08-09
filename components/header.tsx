@@ -11,7 +11,7 @@ const PageTitle = styled.h1`
   font-size: 28px;
   color: #fff;
   line-height: 1;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(207, 55, 33, 0.1);
   img{
     width: 240px;
   }
